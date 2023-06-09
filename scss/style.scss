@@ -24,7 +24,7 @@ $mainColor: #333; // Цвет шрифта по умолчанию
 $mainDarkColor: #0e101a;
 
 $index: calc(1vw + 1vh);
-$gap: 1em;
+$gap: 0.5em;
 $colorDark: #000;
 
 // НАСТРОЙКИ
@@ -147,6 +147,8 @@ body {
   justify-content: center;
   // .content__title
   &__title {
+    position: absolute;
+    margin-top: 0.2em;
     text-transform: uppercase;
     letter-spacing: em(2.2);
     font-weight: 200;
@@ -157,6 +159,23 @@ body {
       font-family: Helvetica, sans-serif;
       font-size: calc($index * 0.75);
       text-align: center;
+    }
+  }
+  // .content__gallery
+  &__gallery {
+  }
+}
+
+.gallery {
+  column-width: 2em;
+  gap: $gap;
+  width: 30vw;
+  transform: scale(8.2);
+  // .gallery__item
+  &__item {
+    margin-bottom: $gap;
+    img {
+      max-width: 100%;
     }
   }
 }

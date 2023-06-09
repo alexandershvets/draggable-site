@@ -9,6 +9,8 @@
   <link rel="shortcut icon" href="favicon.ico">
 
   <script src="js/libs/gsap/gsap.min.js" defer></script>
+  <script src="js/libs/Draggable.min.js"></script>
+  <script src="js/libs/InertiaPlugin.min.js"></script>
 
   <link rel="stylesheet" href="css/style.css">
   <script src="js/app.js" defer></script>
@@ -25,7 +27,91 @@
         <span>Loading...</span>
       </h1>
 
+      <div class="content__gallery gallery">
+        <div class="gallery__item"><img src="img/1.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/2.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/3.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/4.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/5.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/6.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/7.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/8.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/9.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/10.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/11.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/12.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/13.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/14.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/15.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/16.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/17.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/18.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/19.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/20.jpg" alt="Image"></div>
 
+        <div class="gallery__item"><img src="img/1.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/2.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/3.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/4.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/5.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/6.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/7.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/8.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/9.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/10.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/11.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/12.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/13.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/14.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/15.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/16.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/17.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/18.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/19.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/20.jpg" alt="Image"></div>
+
+        <div class="gallery__item"><img src="img/1.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/2.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/3.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/4.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/5.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/6.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/7.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/8.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/9.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/10.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/11.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/12.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/13.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/14.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/15.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/16.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/17.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/18.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/19.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/20.jpg" alt="Image"></div>
+
+        <div class="gallery__item"><img src="img/1.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/2.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/3.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/4.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/5.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/6.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/7.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/8.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/9.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/10.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/11.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/12.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/13.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/14.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/15.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/16.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/17.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/18.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/19.jpg" alt="Image"></div>
+        <div class="gallery__item"><img src="img/20.jpg" alt="Image"></div>
+      </div>
 
     </main>
 

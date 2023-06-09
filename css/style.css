@@ -140,6 +140,8 @@ h6 {
           justify-content: center;
 }
 .content__title {
+  position: absolute;
+  margin-top: 0.2em;
   text-transform: uppercase;
   letter-spacing: 0.1375em;
   font-weight: 200;
@@ -151,4 +153,20 @@ h6 {
   font-family: Helvetica, sans-serif;
   font-size: calc((1vw + 1vh) * 0.75);
   text-align: center;
+}
+.gallery {
+  -webkit-column-width: 2em;
+     -moz-column-width: 2em;
+          column-width: 2em;
+  gap: 0.5em;
+  width: 30vw;
+  -webkit-transform: scale(8.2);
+      -ms-transform: scale(8.2);
+          transform: scale(8.2);
+}
+.gallery__item {
+  margin-bottom: 0.5em;
+}
+.gallery__item img {
+  max-width: 100%;
 }

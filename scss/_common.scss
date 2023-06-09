@@ -1,11 +1,21 @@
 // Заголовки, общие БЄМ блоки и проче...
 
-// Loader
+// LOADER
 .loaded {
   .gallery {
     opacity: 1;
   }
   .content__title span {
     opacity: 0;
+  }
+}
+
+// DARK MODE OS
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: $mainDarkColor;
+  }
+  .content__title {
+    filter: invert(100%);
   }
 }

@@ -159,6 +159,7 @@ body {
       font-family: Helvetica, sans-serif;
       font-size: calc($index * 0.75);
       text-align: center;
+      transition: opacity 0.3s ease 0s;
     }
   }
   // .content__gallery

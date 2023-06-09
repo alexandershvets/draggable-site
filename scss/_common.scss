@@ -1,1 +1,11 @@
 // Заголовки, общие БЄМ блоки и проче...
+
+// Loader
+.loaded {
+  .gallery {
+    opacity: 1;
+  }
+  .content__title span {
+    opacity: 0;
+  }
+}

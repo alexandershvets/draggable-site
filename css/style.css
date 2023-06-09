@@ -128,6 +128,13 @@ h6 {
      object-fit: contain;
 }
 
+.loaded .gallery {
+  opacity: 1;
+}
+.loaded .content__title span {
+  opacity: 0;
+}
+
 .content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -153,6 +160,9 @@ h6 {
   font-family: Helvetica, sans-serif;
   font-size: calc((1vw + 1vh) * 0.75);
   text-align: center;
+  -webkit-transition: opacity 0.3s ease 0s;
+  -o-transition: opacity 0.3s ease 0s;
+  transition: opacity 0.3s ease 0s;
 }
 .gallery {
   -webkit-column-width: 2em;

@@ -163,10 +163,31 @@ h6 {
   -webkit-transform: scale(8.2);
       -ms-transform: scale(8.2);
           transform: scale(8.2);
+  will-change: transform;
+  -webkit-transition: all 1000ms cubic-bezier(0.075, 1, 0.25, 1);
+  -o-transition: all 1000ms cubic-bezier(0.075, 1, 0.25, 1);
+  transition: all 1000ms cubic-bezier(0.075, 1, 0.25, 1);
 }
 .gallery__item {
   margin-bottom: 0.5em;
+  -webkit-transform: scale(1.001);
+      -ms-transform: scale(1.001);
+          transform: scale(1.001);
+  will-change: transform;
+  -webkit-transition: -webkit-transform 0.3s ease 0s;
+  transition: -webkit-transform 0.3s ease 0s;
+  -o-transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+}
+@media (any-hover: hover) {
+  .gallery__item:hover {
+    -webkit-transform: scale(1.03);
+        -ms-transform: scale(1.03);
+            transform: scale(1.03);
+  }
 }
 .gallery__item img {
+  display: block;
   max-width: 100%;
 }

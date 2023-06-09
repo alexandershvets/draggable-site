@@ -171,10 +171,21 @@ body {
   gap: $gap;
   width: 30vw;
   transform: scale(8.2);
+  will-change: transform;
+  transition: all 1000ms cubic-bezier(0.075, 1, 0.25, 1);
   // .gallery__item
   &__item {
     margin-bottom: $gap;
+    transform: scale(1.001);
+    will-change: transform;
+    transition: transform 0.3s ease 0s;
+    @media (any-hover: hover) {
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
     img {
+      display: block;
       max-width: 100%;
     }
   }

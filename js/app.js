@@ -1,1 +1,8 @@
-console.log(111111);
+gsap.registerPlugin(Draggable);
+
+window.addEventListener('load', function () {
+  // Drag & Drop
+  Draggable.create('.gallery', {
+    bounds: '.wrapper', // границы
+  });
+});

@@ -21,7 +21,7 @@ body {
 body {
   color: #333;
   line-height: 1;
-  font-family: Roboto, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: 400;
   font-size: 1rem;
   -ms-text-size-adjust: 100%;
@@ -34,7 +34,7 @@ body {
 input,
 button,
 textarea {
-  font-family: Roboto, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: inherit;
 }
 
@@ -107,10 +107,6 @@ h6 {
 Снипет (HTML): cnt
 */
 [class*=__container] {
-  max-width: 85.625rem;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  margin: 0 auto;
   padding: 0 0.9375rem;
 }
 
@@ -130,4 +126,29 @@ h6 {
 [class*=-ibg_contain] img {
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.content__title {
+  text-transform: uppercase;
+  letter-spacing: 0.1375em;
+  font-weight: 200;
+  font-size: calc((1vw + 1vh) * 2.8);
+}
+.content__title span {
+  display: block;
+  margin-top: 15px;
+  font-family: Helvetica, sans-serif;
+  font-size: calc((1vw + 1vh) * 0.75);
+  text-align: center;
 }

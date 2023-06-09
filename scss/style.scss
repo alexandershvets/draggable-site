@@ -15,7 +15,7 @@
 // @import 'fonts/icons';
 
 // ШРИФТ ПО УМОЛЧАНИЮ
-$fontFamily: Roboto, sans-serif;
+$fontFamily: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 $fontWaight: 400;
 $fontSize: rem(16); // где 18(px) - размер шрифта по умолчанию из макета
 
@@ -23,10 +23,14 @@ $fontSize: rem(16); // где 18(px) - размер шрифта по умолч
 $mainColor: #333; // Цвет шрифта по умолчанию
 $mainDarkColor: #0e101a;
 
+$index: calc(1vw + 1vh);
+$gap: 1em;
+$colorDark: #000;
+
 // НАСТРОЙКИ
 $minWidth: 320; // Минимальная ширина страницы
 $maxWidth: 1920; // Ширина полотна (макета)
-$maxWidthContainer: 1370; // Ширина ограничивающего контейнера (0 = нет ограничения)
+$maxWidthContainer: 0; // Ширина ограничивающего контейнера (0 = нет ограничения)
 $containerPadding: 30; // Общий отступ у контейнера (30 = по 15px слева и справа, 0 = нет отступа)
 
 $containerWidth: $maxWidthContainer + $containerPadding; // Ширина срабатывания первого брейкпоинта
@@ -131,8 +135,28 @@ body {
 @import 'common';
 
 // Подключение стилей отдельных блоков
-@import 'header';
-@import 'footer';
+// @import 'header';
+// @import 'footer';
 
 // Подключение стилей отдельных страниц
-@import 'home';
+// @import 'home';
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // .content__title
+  &__title {
+    text-transform: uppercase;
+    letter-spacing: em(2.2);
+    font-weight: 200;
+    font-size: calc($index * 2.8);
+    span {
+      display: block;
+      margin-top: 15px;
+      font-family: Helvetica, sans-serif;
+      font-size: calc($index * 0.75);
+      text-align: center;
+    }
+  }
+}
